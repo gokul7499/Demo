@@ -1,0 +1,101 @@
+.create-task-form {
+width: 450px;
+  margin-top: 50px;
+  margin-left: 0px;
+  /* margin: auto; */
+  padding: 15px; /* Reduced padding */
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.create-task-container{
+ margin-top: -250px;
+ height: 100px;
+}
+.create-task-form h2 {
+  margin-bottom: 15px; /* Reduced margin */
+  text-align: center;
+  color: #420074;
+  font-size: 1.5rem; /* Adjusted font size */
+}
+
+.form-group {
+  margin-bottom: 10px; /* Reduced spacing between fields */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9rem; /* Adjusted label font size */
+}
+.close-button{
+  margin-top: -190px;
+  margin-right: -60px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem; /* Adjusted input font size */
+}
+
+.form-group textarea {
+  resize: none;
+  height: 60px; /* Reduced textarea height */
+}
+
+.form-row {
+  display: flex;
+  gap: 15px; /* Reduced gap */
+  justify-content: space-between;
+}
+
+.category-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.category-wrapper button {
+  margin-left: 10px;
+  padding: 5px 8px; /* Reduced button size */
+  background-color: #420074;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem; /* Adjusted font size */
+}
+
+.category-wrapper button:hover {
+  background-color: #5e33a8;
+}
+
+.save-button {
+  width: 100%;
+  padding: 8px; /* Reduced button size */
+  background-color: #420074;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Adjusted font size */
+}
+
+.save-button:hover {
+  background-color: #5e33a8;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

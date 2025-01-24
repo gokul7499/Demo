@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .signup-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .signup-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3c1a7d;
+    padding: 20px;
+  }
+  
+  .signup-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .signup-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .signup-form h2 {
+    color: #3c1a7d;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .password-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-container input {
+    flex: 1;
+  }
+  
+  .toggle-password {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .signup-btn {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #3c1a7d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .signup-btn:hover {
+    background-color: #5b23a8;
+  }
+  
+  .signin-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .signin-link a {
+    color: #3c1a7d;
+    text-decoration: none;
+  }
+  
+  .signin-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-container {
+      flex-direction: column;
+    }
+  
+    .signup-image {
+      order: 2;
+    }
+  
+    .signup-form {
+      order: 1;
+    }
+  }
+  

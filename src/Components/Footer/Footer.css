@@ -1,0 +1,61 @@
+/* Footer.css */
+.footer {
+  position: fixed; /* Fixes the footer at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Makes sure the footer spans the full width */
+  background-image: url('../../../public/footer.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  background-position: center; /* Centers the background image */
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px; /* Adjusted padding for spacing */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  z-index: 1000; /* Ensures the footer stays above other content */
+}
+
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the content inside the footer */
+}
+
+.footer-title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  color: #ffdb4d; /* Highlight color on hover */
+}
+
+/* Body and Content Adjustments */
+body {
+  margin: 0;
+  padding-bottom: 60px; /* Adds space at the bottom to avoid overlap */
+  box-sizing: border-box;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+

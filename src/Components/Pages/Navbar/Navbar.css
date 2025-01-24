@@ -1,0 +1,245 @@
+/* General reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Top Navbar */
+.navbar {
+  background-image: url('../../../../public/footer.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.welcome-message {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.nav-link2:hover {
+  color: #f0e6ff; /* Lighter purple on hover */
+}
+
+/* Profile Circle */
+.profile {
+  background-color: white; /* Dark purple */
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  margin-top: 15px;
+  color: black;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Second Navbar (Task Management) */
+.navbar2 {
+  padding: 8px;
+  border-top: 3px solid #4c1d95;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  margin-top: 10px;
+}
+
+.navbar-title {
+  color: #4c1d95;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Dropdown styling */
+.category-dropdown {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.category-dropdown select {
+  appearance: none; /* Removes default arrow */
+  -moz-appearance: none; /* Firefox compatibility */
+  -webkit-appearance: none; /* Safari compatibility */
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #4c1d95; /* Black background */
+  color: #fff; /* White text */
+  width: 110px; /* Adjust width as needed */
+  cursor: pointer;
+}
+
+.input2 {
+  margin-left: 580px;
+  margin-top: -40px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  outline: none;
+  border: 1px solid #ddd;
+}
+/* Dropdown container styling */
+.category-dropdown .form-select {
+  appearance: none; /* Removes the default arrow */
+  background-color: inherit; /* Keeps the background color of the dropdown */
+  color: inherit; /* Keeps the text color */
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Positions the arrow to the right */
+  background-size: 25px;
+}
+
+/* Hover effect for the dropdown (optional) */
+.category-dropdown .form-select:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+/* Optional: Adjust focus outline */
+.category-dropdown .form-select:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Optional focus glow */
+}
+
+/* Remove white background for buttons */
+
+
+/* Custom Buttons */
+.btnn {
+  cursor: pointer;
+  background-color: #4c1d95;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: -40px;
+  margin-left: 30px;
+}
+
+.btnn:hover {
+  background-color: #6b21a8; /* Darker purple */
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+  /* background: #fff; */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* Overlay to darken the background */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+
+/* Popup content box */
+.popup-content {
+  background: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  padding: 20px;
+  width: 300px; /* Set a consistent width */
+  text-align: center; /* Center text alignment */
+  animation: fadeIn 0.3s ease-in-out; /* Smooth popup animation */
+}
+
+/* Text inside the popup */
+.popup-content p {
+  font-size: 16px;
+  margin-bottom: 20px; /* Space between text and buttons */
+  color: #333; /* Dark gray text */
+}
+
+/* Button styling */
+.popup-content .btn {
+  padding: 10px 20px;
+  margin: 0 10px; /* Spacing between buttons */
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.popup-content .logout-btn {
+  background-color: #d9534f; /* Red for logout */
+  color: #fff;
+}
+
+.popup-content .logout-btn:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

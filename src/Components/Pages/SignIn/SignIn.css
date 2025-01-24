@@ -1,0 +1,23 @@
+.img-fluid {
+  max-width: 100%; /* Ensures the image fits within its container */
+  height: 556px;   /* Maintains the aspect ratio */
+  margin-left: -50px; /* Removes negative margin */
+}
+.btn3{
+  width: 540px;
+  border: 1px solid blue;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.btn3:hover{
+  background-color: blue;
+  border: none;
+  color: white;
+}
+.btnn{
+  height: 20px;
+  width: 30px;
+  background-color: aquamarine;
+}
