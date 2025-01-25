@@ -55,7 +55,7 @@ const Login = ({ setUserName }) => {
       <div className="row">
         <div className="col-md-6 d-flex ">
           <img
-            src="./Sign.png"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqe24bLsD1cKNG1jcWKQpkswhPKEETBmn_iQ&s"
             alt="Sign-In illustration"
             className="img-fluid"
           />
